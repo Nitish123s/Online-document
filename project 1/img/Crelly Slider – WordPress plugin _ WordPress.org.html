@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://wordpress.org/plugins/crelly-slider/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--
+		  Output the FSE styles that the header/footer relies on.
+
+		  Some of them may conflict with rules that the Classic theme applies to the content area. These are
+		  output first, so they can be overridden if needed.
+		-->
+		<style id="global-styles-for-classic-themes">
+			body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--darker-grey: #1c2024;--wp--preset--color--dark-grey: #23282d;--wp--preset--color--dark-strokes-grey: #2f363d;--wp--preset--color--light-grey: #d9d9d9;--wp--preset--color--beige: #e4ddd4;--wp--preset--color--beige-2: #d3ccc3;--wp--preset--color--blue-1: #3e58e1;--wp--preset--color--blue-2: #213fd4;--wp--preset--color--blue-3: #7b90ff;--wp--preset--color--blue-5: #2541D6;--wp--preset--color--off-white: #f8f3ec;--wp--preset--color--off-white-2: #eff2ff;--wp--preset--color--light-salmon: #ffe9de;--wp--preset--color--green: #72d1a7;--wp--preset--color--success-green: #00a32a;--wp--preset--color--coral-red: #f86368;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 14px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 20px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--tiny: 12px;--wp--preset--font-size--normal: 16px;--wp--preset--font-size--extra-large: 24px;--wp--preset--font-size--huge: 32px;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--inter: 'Inter', sans-serif;--wp--custom--alignment--aligned-max-width: 50%;--wp--custom--alignment--edge-spacing: clamp( 24px, calc( 100vw / 18 ), 80px );--wp--custom--button--color--background: var(--wp--preset--color--blue-1);--wp--custom--button--color--text: var(--wp--preset--color--white);--wp--custom--button--border--color: var(--wp--preset--color--blue-1);--wp--custom--button--border--radius: 2px;--wp--custom--button--border--style: solid;--wp--custom--button--border--width: 2px;--wp--custom--button--hover--color--background: var(--wp--preset--color--blue-2);--wp--custom--button--hover--color--text: var(--wp--preset--color--white);--wp--custom--button--hover--border--color: var(--wp--preset--color--blue-2);--wp--custom--button--active--color--background: var(--wp--preset--color--black);--wp--custom--button--active--color--text: var(--wp--preset--color--white);--wp--custom--button--active--border--color: var(--wp--preset--color--black);--wp--custom--button--focus--color--background: var(--wp--preset--color--dark-grey);--wp--custom--button--focus--color--text: var(--wp--preset--color--white);--wp--custom--button--focus--border--color: var(--wp--preset--color--dark-grey);--wp--custom--button--spacing--padding--top: 0.2em;--wp--custom--button--spacing--padding--bottom: var(--wp--custom--button--spacing--padding--top);--wp--custom--button--spacing--padding--left: 1em;--wp--custom--button--spacing--padding--right: var(--wp--custom--button--spacing--padding--left);--wp--custom--button--typography--font-size: var(--wp--preset--font-size--normal);--wp--custom--button--typography--font-weight: normal;--wp--custom--button--typography--line-height: 2;--wp--custom--code--typography--font-family: monospace;--wp--custom--form--padding: calc( 0.5 * var(--wp--custom--margin--horizontal) );--wp--custom--form--border--color: #EFEFEF;--wp--custom--form--border--radius: 0;--wp--custom--form--border--style: solid;--wp--custom--form--border--width: 2px;--wp--custom--form--checkbox--checked--content: "\2715";--wp--custom--form--checkbox--checked--font-size: 14px;--wp--custom--form--checkbox--checked--position--left: 3px;--wp--custom--form--checkbox--checked--position--top: 4px;--wp--custom--form--checkbox--checked--sizing--height: 12px;--wp--custom--form--checkbox--checked--sizing--width: 12px;--wp--custom--form--checkbox--unchecked--content: "";--wp--custom--form--checkbox--unchecked--position--left: 0;--wp--custom--form--checkbox--unchecked--position--top: 0.2em;--wp--custom--form--checkbox--unchecked--sizing--height: 16px;--wp--custom--form--checkbox--unchecked--sizing--width: 16px;--wp--custom--form--color--background: transparent;--wp--custom--form--color--box-shadow: none;--wp--custom--form--label--typography--font-size: var(--wp--preset--font-size--tiny);--wp--custom--gallery--caption--font-size: var(--wp--preset--font-size--small);--wp--custom--body--typography--line-height: 1.9;--wp--custom--heading--typography--font-family: var(--wp--preset--font-family--eb-garamond);--wp--custom--heading--typography--font-weight: 400;--wp--custom--heading--typography--line-height: 1.3;--wp--custom--h-1--breakpoint--mobile--typography--font-size: 70px;--wp--custom--h-1--breakpoint--mobile--typography--line-height: 1.1;--wp--custom--h-1--typography--font-size: 38px;--wp--custom--h-1--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-2--breakpoint--mobile--typography--font-size: clamp(26px, 4vw, 50px);--wp--custom--h-2--typography--font-size: 26px;--wp--custom--h-2--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-3--breakpoint--mobile--typography--font-size: clamp(26px, 4vw, 36px);--wp--custom--h-3--breakpoint--mobile--typography--line-height: 1.3;--wp--custom--h-3--typography--font-size: 26px;--wp--custom--h-3--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-4--breakpoint--mobile--typography--font-size: 30px;--wp--custom--h-4--typography--font-size: 20px;--wp--custom--h-4--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-5--breakpoint--mobile--typography--font-size: 26px;--wp--custom--h-5--breakpoint--mobile--typography--line-height: 1.35;--wp--custom--h-5--typography--font-size: 20px;--wp--custom--h-5--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-6--typography--font-size: var(--wp--preset--font-size--normal);--wp--custom--h-6--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--layout--content-size: 680px;--wp--custom--layout--wide-size: 1070px;--wp--custom--layout--content-meta-size: calc( var(--wp--custom--layout--wide-size) - var(--wp--custom--layout--content-size) );--wp--custom--list--spacing--padding--left: var(--wp--custom--margin--horizontal);--wp--custom--margin--baseline: 10px;--wp--custom--margin--horizontal: 30px;--wp--custom--margin--vertical: 30px;--wp--custom--paragraph--dropcap--margin: .1em .1em 0 0;--wp--custom--paragraph--dropcap--typography--font-size: 110px;--wp--custom--paragraph--dropcap--typography--font-weight: 400;--wp--custom--paragraph--padding--horizontal: var(--wp--custom--alignment--edge-spacing);--wp--custom--paragraph--padding--vertical: var(--wp--custom--alignment--edge-spacing);--wp--custom--post-comment--typography--font-size: var(--wp--preset--font-size--normal);--wp--custom--post-comment--typography--line-height: var(--wp--custom--body--typography--line-height);--wp--custom--pullquote--citation--typography--font-size: 30px;--wp--custom--pullquote--citation--typography--font-family: inherit;--wp--custom--pullquote--citation--typography--font-style: italic;--wp--custom--pullquote--citation--spacing--margin--top: var(--wp--custom--margin--vertical);--wp--custom--pullquote--typography--text-align: left;--wp--custom--quote--citation--typography--font-size: 20px;--wp--custom--quote--citation--typography--font-family: inherit;--wp--custom--quote--citation--typography--font-style: normal;--wp--custom--quote--typography--text-align: left;--wp--custom--separator--opacity: 1;--wp--custom--separator--margin: var(--wp--custom--margin--vertical) auto;--wp--custom--separator--width: 150px;--wp--custom--table--figcaption--typography--font-size: var(--wp--preset--font-size--tiny);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-darker-grey-color{color: var(--wp--preset--color--darker-grey) !important;}.has-dark-grey-color{color: var(--wp--preset--color--dark-grey) !important;}.has-dark-strokes-grey-color{color: var(--wp--preset--color--dark-strokes-grey) !important;}.has-light-grey-color{color: var(--wp--preset--color--light-grey) !important;}.has-beige-color{color: var(--wp--preset--color--beige) !important;}.has-beige-2-color{color: var(--wp--preset--color--beige-2) !important;}.has-blue-1-color{color: var(--wp--preset--color--blue-1) !important;}.has-blue-2-color{color: var(--wp--preset--color--blue-2) !important;}.has-blue-3-color{color: var(--wp--preset--color--blue-3) !important;}.has-blue-5-color{color: var(--wp--preset--color--blue-5) !important;}.has-off-white-color{color: var(--wp--preset--color--off-white) !important;}.has-off-white-2-color{color: var(--wp--preset--color--off-white-2) !important;}.has-light-salmon-color{color: var(--wp--preset--color--light-salmon) !important;}.has-green-color{color: var(--wp--preset--color--green) !important;}.has-success-green-color{color: var(--wp--preset--color--success-green) !important;}.has-coral-red-color{color: var(--wp--preset--color--coral-red) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-darker-grey-background-color{background-color: var(--wp--preset--color--darker-grey) !important;}.has-dark-grey-background-color{background-color: var(--wp--preset--color--dark-grey) !important;}.has-dark-strokes-grey-background-color{background-color: var(--wp--preset--color--dark-strokes-grey) !important;}.has-light-grey-background-color{background-color: var(--wp--preset--color--light-grey) !important;}.has-beige-background-color{background-color: var(--wp--preset--color--beige) !important;}.has-beige-2-background-color{background-color: var(--wp--preset--color--beige-2) !important;}.has-blue-1-background-color{background-color: var(--wp--preset--color--blue-1) !important;}.has-blue-2-background-color{background-color: var(--wp--preset--color--blue-2) !important;}.has-blue-3-background-color{background-color: var(--wp--preset--color--blue-3) !important;}.has-blue-5-background-color{background-color: var(--wp--preset--color--blue-5) !important;}.has-off-white-background-color{background-color: var(--wp--preset--color--off-white) !important;}.has-off-white-2-background-color{background-color: var(--wp--preset--color--off-white-2) !important;}.has-light-salmon-background-color{background-color: var(--wp--preset--color--light-salmon) !important;}.has-green-background-color{background-color: var(--wp--preset--color--green) !important;}.has-success-green-background-color{background-color: var(--wp--preset--color--success-green) !important;}.has-coral-red-background-color{background-color: var(--wp--preset--color--coral-red) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-darker-grey-border-color{border-color: var(--wp--preset--color--darker-grey) !important;}.has-dark-grey-border-color{border-color: var(--wp--preset--color--dark-grey) !important;}.has-dark-strokes-grey-border-color{border-color: var(--wp--preset--color--dark-strokes-grey) !important;}.has-light-grey-border-color{border-color: var(--wp--preset--color--light-grey) !important;}.has-beige-border-color{border-color: var(--wp--preset--color--beige) !important;}.has-beige-2-border-color{border-color: var(--wp--preset--color--beige-2) !important;}.has-blue-1-border-color{border-color: var(--wp--preset--color--blue-1) !important;}.has-blue-2-border-color{border-color: var(--wp--preset--color--blue-2) !important;}.has-blue-3-border-color{border-color: var(--wp--preset--color--blue-3) !important;}.has-blue-5-border-color{border-color: var(--wp--preset--color--blue-5) !important;}.has-off-white-border-color{border-color: var(--wp--preset--color--off-white) !important;}.has-off-white-2-border-color{border-color: var(--wp--preset--color--off-white-2) !important;}.has-light-salmon-border-color{border-color: var(--wp--preset--color--light-salmon) !important;}.has-green-border-color{border-color: var(--wp--preset--color--green) !important;}.has-success-green-border-color{border-color: var(--wp--preset--color--success-green) !important;}.has-coral-red-border-color{border-color: var(--wp--preset--color--coral-red) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-extra-large-font-size{font-size: var(--wp--preset--font-size--extra-large) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}body { --wp--style--block-gap: 24px; }		</style>
+
+		<title>Crelly Slider – WordPress plugin | WordPress.org</title>
+<meta name="robots" content="max-image-preview:large">
+
+<script type="text/javascript" async="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/analytics.js.download"></script><script async="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/gtm.js.download"></script><script type="application/ld+json">
+[
+    {
+        "@context": "http://schema.org",
+        "@type": [
+            "SoftwareApplication",
+            "Product"
+        ],
+        "applicationCategory": "Plugin",
+        "operatingSystem": "WordPress",
+        "name": "Crelly Slider",
+        "url": "https://wordpress.org/plugins/crelly-slider/",
+        "description": "A free responsive slider that supports layers. Add texts, images, videos and beautify them with transitions and animations.",
+        "softwareVersion": "1.4.5",
+        "fileFormat": "application/zip",
+        "downloadUrl": "https://downloads.wordpress.org/plugin/crelly-slider.1.4.5.zip",
+        "dateModified": "2021-09-12T21:07:02+00:00",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "worstRating": 1,
+            "bestRating": 5,
+            "ratingValue": 4.9,
+            "ratingCount": 109,
+            "reviewCount": 109
+        },
+        "interactionStatistic": {
+            "@type": "InteractionCounter",
+            "interactionType": "http://schema.org/DownloadAction",
+            "userInteractionCount": 310401
+        },
+        "image": [
+            "https://ps.w.org/crelly-slider/assets/icon-128x128.jpg?rev=1305586",
+            "https://ps.w.org/crelly-slider/assets/banner-772x250.jpg?rev=1638281"
+        ],
+        "offers": {
+            "@type": "Offer",
+            "url": "https://wordpress.org/plugins/crelly-slider/",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "seller": {
+                "@type": "Organization",
+                "name": "WordPress.org",
+                "url": "https://wordpress.org"
+            }
+        }
+    }
+]
+</script>
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="alternate" href="https://de.wordpress.org/plugins/crelly-slider/" hreflang="de-de">
+<link rel="alternate" href="https://wordpress.org/plugins/crelly-slider/" hreflang="en">
+<link rel="alternate" href="https://en-gb.wordpress.org/plugins/crelly-slider/" hreflang="en-gb">
+<link rel="alternate" href="https://es.wordpress.org/plugins/crelly-slider/" hreflang="es-es">
+<link rel="alternate" href="https://fr.wordpress.org/plugins/crelly-slider/" hreflang="fr-fr">
+<link rel="alternate" href="https://it.wordpress.org/plugins/crelly-slider/" hreflang="it-it">
+<link rel="alternate" href="https://ru.wordpress.org/plugins/crelly-slider/" hreflang="ru-ru">
+<link rel="alternate" href="https://wordpress.org/plugins/crelly-slider/" hreflang="x-default">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P24PF4B');</script>
+	<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/wordpress.org\/plugins\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1-alpha-53704"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./Crelly Slider – WordPress plugin _ WordPress.org_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="dashicons-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/admin-bar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/style.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/wp-mediaelement.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="open-sans-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/css2" type="text/css" media="all">
+<link rel="stylesheet" id="wporg-style-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="wporg-global-fonts-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="wporg-global-header-footer-css" href="./Crelly Slider – WordPress plugin _ WordPress.org_files/style(3).css" type="text/css" media="all">
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/view.min.js.download" id="wp-block-navigation-view-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/view-modal.min.js.download" id="wp-block-navigation-view-modal-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/regenerator-runtime.min.js.download" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/wp-polyfill.min.js.download" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/index.min.js.download" id="wp-hooks-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/index.min.js(1).download" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/react.min.js.download" id="react-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/react-dom.min.js.download" id="react-dom-js"></script>
+<link rel="https://api.w.org/" href="https://wordpress.org/plugins/wp-json/"><link rel="alternate" type="application/json" href="https://wordpress.org/plugins/wp-json/wp/v2/plugin/30807"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wordpress.org/plugins/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wordpress.org/plugins/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.1-alpha-53704">
+<link rel="shortlink" href="https://wordpress.org/plugins/?p=30807">
+<link rel="alternate" type="application/json+oembed" href="https://wordpress.org/plugins/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.org%2Fplugins%2Fcrelly-slider%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://wordpress.org/plugins/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.org%2Fplugins%2Fcrelly-slider%2F&amp;format=xml">
+<link rel="canonical" href="https://wordpress.org/plugins/crelly-slider/">
+<link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""> <!-- Stream WordPress user activity plugin v3.9.0 -->
+	<style>
+		@media screen and (max-width: 782px) {
+			#wpadminbar li#wp-admin-bar-log-in,
+			#wpadminbar li#wp-admin-bar-register {
+				display: block;
+			}
+
+			#wpadminbar li#wp-admin-bar-log-in a,
+			#wpadminbar li#wp-admin-bar-register a {
+				padding: 0 8px;
+			}
+		}
+	</style>
+<meta property="og:title" content="Crelly Slider">
+<meta property="og:description" content="A free responsive slider that supports layers. Add texts, images, videos and beautify them with transitions and animations.">
+<meta name="description" content="A free responsive slider that supports layers. Add texts, images, videos and beautify them with transitions and animations.">
+<meta property="og:site_name" content="WordPress.org">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wordpress.org/plugins/crelly-slider/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@WordPress">
+<meta property="og:image" content="https://ps.w.org/crelly-slider/assets/banner-772x250.jpg?rev=1638281">
+<meta name="thumbnail" content="https://ps.w.org/crelly-slider/assets/icon-128x128.jpg?rev=1305586">
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<link rel="icon" href="https://s.w.org/favicon.ico?2" sizes="32x32">
+<link rel="icon" href="https://s.w.org/images/wmark.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://s.w.org/images/wmark.png">
+<meta name="msapplication-TileImage" content="https://s.w.org/images/wmark.png">
+	</head>
+
+	<body class="plugin-template-default single single-plugin postid-30807 admin-bar no-customize-support js">
+		<a id="wporg-skip-link" class="skip-link screen-reader-text" href="https://wordpress.org/plugins/crelly-slider/#main" data-selector="#main">Skip to content</a>
+		<div id="wpadminbar" class="nojq">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wordpress.org/about/"><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="https://wordpress.org/about/">About WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://wordpress.org/support/">Documentation</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/forums/">Support</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li></ul></div></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://wordpress.org/plugins/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"></form></div></li><li id="wp-admin-bar-log-in"><a class="ab-item" href="https://login.wordpress.org/?redirect_to=https%3A%2F%2Fwordpress.org%2Fplugins%2Fcrelly-slider%2F&amp;locale=en_US">Log In</a></li><li id="wp-admin-bar-register"><a class="ab-item" href="https://login.wordpress.org/register?locale=en_US">Register</a></li></ul>			</div>
+					</div>
+
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P24PF4B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><script>document.body.className = document.body.className.replace('no-js','js');</script>
+
+
+<header class="wp-container-8 wp-block-group alignfull global-header">
+	
+	<!-- The design calls for two logos, a small "mark" on mobile/tablet, and the full logo for desktops. -->
+		<figure class="wp-block-image global-header__wporg-logo-mark">
+			<a href="https://wordpress.org/">
+				<svg xmlns="http://www.w3.org/2000/svg" role="img" width="28" height="28" viewBox="0 0 28 28">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M13.6052 0.923525C16.1432 0.923525 18.6137 1.67953 20.7062 3.09703C22.7447 4.47403 24.3512 6.41803 25.3097 8.68603C26.9837 12.6415 26.5382 17.164 24.1352 20.7145C22.7582 22.753 20.8142 24.3595 18.5462 25.318C14.5907 26.992 10.0682 26.5465 6.51772 24.1435C4.47922 22.7665 2.87272 20.8225 1.91422 18.5545C0.240225 14.599 0.685725 10.0765 3.08872 6.52603C4.46572 4.48753 6.40973 2.88103 8.67772 1.92253C10.2302 1.26103 11.9177 0.923525 13.6052 0.923525ZM13.6052 0.113525C6.15322 0.113525 0.105225 6.16153 0.105225 13.6135C0.105225 21.0655 6.15322 27.1135 13.6052 27.1135C21.0572 27.1135 27.1052 21.0655 27.1052 13.6135C27.1052 6.16153 21.0572 0.113525 13.6052 0.113525Z"></path>
+	<path fill="currentColor" d="M2.36011 13.6133C2.36011 17.9198 4.81711 21.8618 8.70511 23.7383L3.33211 9.03684C2.68411 10.4813 2.36011 12.0338 2.36011 13.6133ZM21.2061 13.0463C21.2061 11.6558 20.7066 10.6973 20.2746 9.94134C19.8426 9.18534 19.1676 8.22684 19.1676 7.30884C19.1676 6.39084 19.9506 5.31084 21.0576 5.31084H21.2061C16.6296 1.11234 9.51511 1.42284 5.31661 6.01284C4.91161 6.45834 4.53361 6.93084 4.20961 7.43034H4.93861C6.11311 7.43034 7.93561 7.28184 7.93561 7.28184C8.54311 7.24134 8.61061 8.13234 8.00311 8.21334C8.00311 8.21334 7.39561 8.28084 6.72061 8.32134L10.8111 20.5118L13.2681 13.1273L11.5131 8.32134C10.9056 8.28084 10.3386 8.21334 10.3386 8.21334C9.73111 8.17284 9.79861 7.25484 10.4061 7.28184C10.4061 7.28184 12.2691 7.43034 13.3626 7.43034C14.4561 7.43034 16.3596 7.28184 16.3596 7.28184C16.9671 7.24134 17.0346 8.13234 16.4271 8.21334C16.4271 8.21334 15.8196 8.28084 15.1446 8.32134L19.2081 20.4173L20.3691 16.7453C20.8821 15.1388 21.1926 14.0048 21.1926 13.0328L21.2061 13.0463ZM13.7946 14.5853L10.4196 24.3998C12.6876 25.0613 15.1041 25.0073 17.3316 24.2243L17.2506 24.0758L13.7946 14.5853ZM23.4741 8.21334C23.5281 8.59134 23.5551 8.98284 23.5551 9.37434C23.5551 10.5218 23.3391 11.8043 22.7046 13.3973L19.2621 23.3333C24.5271 20.2688 26.4036 13.5593 23.4741 8.21334Z"></path>
+</svg>			</a>
+		</figure>
+
+		<figure class="wp-block-image global-header__wporg-logo-full">
+			<a href="https://wordpress.org/">
+				<svg xmlns="http://www.w3.org/2000/svg" role="img" width="329" height="52" viewBox="0 0 329 52">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M4.33 26a21.68 21.68 0 0 0 12.22 19.5L6.21 17.18A21.66 21.66 0 0 0 4.33 26ZM26.38 27.89l-6.5 18.89a21.31 21.31 0 0 0 6.12.89 21.77 21.77 0 0 0 7.2-1.23 1.429 1.429 0 0 1-.16-.3l-6.66-18.25Z"></path>
+	<path fill="currentColor" d="M26 0a26 26 0 1 0 0 52 26 26 0 0 0 0-52Zm20.27 39.66a24.47 24.47 0 0 1-29.78 8.86 24.49 24.49 0 0 1-13-13 24.4 24.4 0 0 1 5.23-26.8 24.46 24.46 0 0 1 26.79-5.24 24.49 24.49 0 0 1 13 13 24.42 24.42 0 0 1-2.25 23.17l.01.01Z"></path>
+	<path fill="currentColor" d="M45 15.61c.103.736.153 1.477.15 2.22a20.38 20.38 0 0 1-1.65 7.76l-6.61 19.14A21.65 21.65 0 0 0 45 15.61ZM40.63 24.91a11.45 11.45 0 0 0-1.79-6c-1.1-1.78-2.13-3.29-2.13-5.08A3.76 3.76 0 0 1 40.35 10h.28A21.65 21.65 0 0 0 7.9 14.1h1.39c2.27 0 5.78-.27 5.78-.27a.9.9 0 0 1 .13 1.79s-1.17.13-2.47.2l7.88 23.47 4.75-14.22L22 15.84c-1.17-.07-2.27-.2-2.27-.2a.9.9 0 0 1 .14-1.79s3.57.27 5.7.27c2.13 0 5.78-.27 5.78-.27a.9.9 0 0 1 .14 1.79s-1.18.13-2.48.2l7.83 23.29 2.23-7.08a25.171 25.171 0 0 0 1.56-7.14ZM145.83 19.3h-10.34v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85-2.48-.35-4.16-1.68-6.47-4.22l-2.66-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.24 0 3.76.69 3.76 4.79v7.4c0 4.1-.52 4.85-3.76 4.85v1.1h11.5v-1.1c-3.24 0-3.76-.75-3.76-4.85v-2.08h1l6.42 8h16.81c8.26 0 11.85-4.39 11.85-9.65 0-5.26-3.61-9.56-11.87-9.56Zm-24.21 9.42V21H124a3.551 3.551 0 0 1 3.76 3.87 3.536 3.536 0 0 1-3.76 3.85h-2.38Zm24.38 8h-.4c-2.08 0-2.37-.52-2.37-3.18V21H146c6 0 7.11 4.39 7.11 7.8S152 36.75 146 36.75v-.03ZM93.49 13.52H82.62v1.16c3.7 0 4.22 1 3.07 4.39l-4 11.78L76 13.52h-1.1l-5.85 17.33-3.87-11.78c-1.22-3.59-.29-4.39 3.12-4.39v-1.16H55.47v1.16c3.35 0 4.28.86 5.66 5.08l6.42 19.76h.75l6-18.08 5.9 18.08h.8l6.59-19.76c1.44-4.22 2.31-5.08 5.95-5.08l-.05-1.16ZM101.34 18.55c-6.35 0-11.55 4.68-11.55 10.34s5.2 10.4 11.55 10.4c6.35 0 11.56-4.68 11.56-10.4 0-5.72-5.2-10.34-11.56-10.34Zm0 18.89c-5.31 0-7.16-4.74-7.16-8.55 0-3.81 1.85-8.55 7.16-8.55 5.31 0 7.23 4.79 7.23 8.55 0 3.76-1.85 8.55-7.23 8.55ZM170.67 13.52h-12v1.16c3.88 0 4.57.92 4.57 6.7v9.24c0 5.78-.69 6.76-4.57 6.76v1.16H172v-1.16c-3.88 0-4.57-1-4.57-6.76v-2.83h3.29c6 0 9.25-3.12 9.25-7.11s-3.35-7.16-9.3-7.16Zm0 12.13h-3.29v-10h3.29c3.24 0 4.74 2.31 4.74 5.08s-1.5 4.92-4.74 4.92ZM219.32 34.15c-.52 1.9-1.15 2.6-5.26 2.6h-.81c-3 0-3.52-.7-3.52-4.8v-2.66c4.51 0 4.85.41 4.85 3.41h1.1v-8.61h-1.1c0 3-.34 3.41-4.85 3.41V21h3.18c4.1 0 4.74.69 5.26 2.6l.28 1.1h.93l-.38-5.4h-17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 3.75-.44 4.69-3 4.83-2.42-.37-4.09-1.69-6.37-4.2l-2.65-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85v1.1h11.49v-1.1c-3.23 0-3.75-.75-3.75-4.85v-2.08h1l6.41 8h23.75l.35-5.43h-.87l-.31 1.07ZM189 28.72V21h2.37a3.542 3.542 0 0 1 3.75 3.87 3.532 3.532 0 0 1-.998 2.77 3.532 3.532 0 0 1-2.752 1.05l-2.37.03ZM234.52 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85h-1.09a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7-2.54 7-6.18.07-1.77-1.03-3.9-3.8-5.23ZM252 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85H253a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7.05-2.54 7.05-6.18.07-1.77-1.03-3.9-3.79-5.23ZM277.56 18.75a10.481 10.481 0 0 0-10.68 10.17 10.47 10.47 0 0 0 10.68 10.16c5.9 0 10.71-4.58 10.71-10.16s-4.81-10.17-10.71-10.17Zm0 19c-5.52 0-7.63-4.91-7.63-8.88 0-3.97 2.07-8.87 7.63-8.87 5.56 0 7.66 4.94 7.66 8.92 0 3.98-2.11 8.88-7.66 8.88v-.05ZM301.71 33.79l-3.14-3.69c3.63-.38 5.71-2.59 5.71-5.38 0-3-2.44-5.42-6.89-5.42h-8.47v.7c2.66 0 3.05.51 3.05 3.72v10.39c0 3.21-.39 3.76-3.05 3.76v.67h8.66v-.67c-2.66 0-3.05-.55-3.05-3.76v-4H296l6.35 8.44h5.29v-.67c-1.88-.24-4.03-1.88-5.93-4.09ZM294.53 29v-8.52h2.82c2.79 0 4.08 1.93 4.08 4.24 0 2.31-1.29 4.28-4.08 4.28h-2.82ZM319.6 30.59v.64c2.21 0 3 .7 3 2.08 0 2.89-2.5 4.39-5.29 4.39-5.93 0-7.6-4.81-7.6-8.78 0-3.97 1.86-8.92 7-8.92 3.59 0 6.09 2.54 7 6.7h.64v-7h-.64a3.281 3.281 0 0 1-1.09 1.83 8.203 8.203 0 0 0-6-2.73 10.167 10.167 0 0 0-9.851 10.165 10.169 10.169 0 0 0 9.851 10.165c3.34 0 4.78-1.66 8.34-1.66V35c0-3.21.39-3.75 3.05-3.75v-.64l-8.41-.02ZM261.9 34.77a2.061 2.061 0 1 0 .288 4.112 2.061 2.061 0 0 0-.288-4.112Z"></path>
+</svg>			</a>
+		</figure>
+	
+
+	
+	<nav class="wp-container-2 is-responsive global-header__navigation wp-block-navigation has-menu-loaded" aria-label=""><button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-1"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+			<div class="wp-block-navigation__responsive-container  " style="" id="modal-1">
+				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close="">
+					<div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
+							<button aria-label="Close menu" data-micromodal-close="" class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+						<div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
+							<ul class="wp-block-navigation__container"><li class="wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/plugins/"><span class="wp-block-navigation-item__label">Plugins</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/themes/"><span class="wp-block-navigation-item__label">Themes</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/patterns/"><span class="wp-block-navigation-item__label">Patterns</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://learn.wordpress.org/"><span class="wp-block-navigation-item__label">Learn</span></a></li><li class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/">Support</a><button aria-label="Support submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul class="wp-block-navigation__submenu-container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/"><span class="wp-block-navigation-item__label">Documentation</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/forums/"><span class="wp-block-navigation-item__label">Forums</span></a></li></ul></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/news/"><span class="wp-block-navigation-item__label">News</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/about/"><span class="wp-block-navigation-item__label">About</span></a></li><li class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="https://make.wordpress.org/">Get Involved</a><button aria-label="Get Involved submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul class="wp-block-navigation__submenu-container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/five-for-the-future/"><span class="wp-block-navigation-item__label">Five for the Future</span></a></li></ul></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/showcase/"><span class="wp-block-navigation-item__label">Showcase</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/mobile/"><span class="wp-block-navigation-item__label">Mobile</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/hosting/"><span class="wp-block-navigation-item__label">Hosting</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/openverse/"><span class="wp-block-navigation-item__label">Openverse</span></a></li><li class=" wp-block-navigation-item global-header__mobile-get-wordpress global-header__get-wordpress wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/download/"><span class="wp-block-navigation-item__label">Get WordPress</span></a></li></ul>
+						</div>
+					</div>
+				</div>
+			</div></nav>
+
+		<!--
+		The search block is inside a navigation menu because that provides the exact functionality the design
+		calls for. It also provides a consistent experience with the primary navigation menu, with respect to
+		keyboard navigation, ARIA states, etc. It also saves having to write custom code for all the interactions.
+	-->
+	<nav class="wp-container-6 is-responsive global-header__search wp-block-navigation" aria-label=""><button aria-haspopup="true" aria-label="Open Search" class="wp-block-navigation__responsive-container-open always-shown" data-micromodal-trigger="modal-5"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+			<div class="wp-block-navigation__responsive-container hidden-by-default " style="" id="modal-5">
+				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close="">
+					<div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
+							<button aria-label="Close Search" data-micromodal-close="" class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+						<div class="wp-block-navigation__responsive-container-content" id="modal-5-content">
+							<form role="search" method="get" action="https://wordpress.org/search/do-search.php" class="wp-block-search__button-inside wp-block-search__icon-button wp-block-search"><label for="wp-block-search__input-4" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper "><input type="search" id="wp-block-search__input-4" class="wp-block-search__input " name="s" value="" placeholder="Search WP.org..." required=""><button type="submit" class="wp-block-search__button has-icon wp-element-button" aria-label="Search"><svg class="search-icon" viewBox="0 0 24 24" width="24" height="24">
+					<path d="M13.5 6C10.5 6 8 8.5 8 11.5c0 1.1.3 2.1.9 3l-3.4 3 1 1.1 3.4-2.9c1 .9 2.2 1.4 3.6 1.4 3 0 5.5-2.5 5.5-5.5C19 8.5 16.5 6 13.5 6zm0 9.5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+				</svg></button></div></form>
+						</div>
+					</div>
+				</div>
+			</div></nav>
+	
+	<!-- This is the first of two Get WordPress buttons; the other is in the navigation menu.
+		 Two are needed because they have different DOM hierarchies at different breakpoints. -->
+	
+	<div class="wp-container-7 global-header__desktop-get-wordpress-container">
+		<a href="https://wordpress.org/download/" class="global-header__desktop-get-wordpress global-header__get-wordpress">
+			Get WordPress		</a>
+	</div> 
+</header> 
+<div id="page" class="site">
+	<div id="content" class="site-content">
+		<header id="masthead" class="site-header " role="banner">
+			<div class="site-branding">
+									<p class="site-title"><a href="https://wordpress.org/plugins/" rel="home">Plugins</a></p>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle dashicons dashicons-arrow-down-alt2" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu"></button>
+						<div id="primary-menu" class="menu">
+							<ul class=" nav-menu">
+																<li class="page_item"><a class="" href="https://wordpress.org/plugins/browse/favorites/">My Favorites</a></li>
+																<li class="page_item"><a class="" href="https://wordpress.org/plugins/browse/beta/">Beta Testing</a></li>
+																<li class="page_item"><a class="" href="https://wordpress.org/plugins/developers/">Developers</a></li>
+																<li><form role="search" method="get" class="search-form" action="https://wordpress.org/plugins/">
+	<label for="s" class="screen-reader-text">Search for:</label>
+	<input type="search" id="s" class="search-field" placeholder="Search plugins" value="" name="s">
+		<button class="button button-primary button-search"><i class="dashicons dashicons-search"></i><span class="screen-reader-text">Search plugins</span></button>
+</form>
+</li>
+							</ul>
+						</div>
+					</nav><!-- #site-navigation -->
+							</div><!-- .site-branding -->
+		</header><!-- #masthead -->
+
+	<main id="main" class="site-main" role="main">
+
+		
+<article id="post-30807" class="post-30807 plugin type-plugin status-publish hentry plugin_category-advertising plugin_category-communication plugin_category-media plugin_contributors-fabiorino plugin_committers-fabiorino plugin_tags-animations plugin_tags-layers plugin_tags-slider plugin_tags-texts plugin_tags-transitions">
+	<style type="text/css">#plugin-banner-crelly-slider { background-image: url('https://ps.w.org/crelly-slider/assets/banner-772x250.jpg?rev=1638281'); }</style><div class="plugin-banner" id="plugin-banner-crelly-slider"></div>
+	<header class="plugin-header">
+				
+		<div class="entry-thumbnail">
+			<img class="plugin-icon" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/icon-128x128.jpg">		</div>
+
+		<div class="plugin-actions">
+			
+							<a class="plugin-download button download-button button-large" href="https://downloads.wordpress.org/plugin/crelly-slider.1.4.5.zip">Download</a>
+					</div>
+
+				<h1 class="plugin-title">Crelly Slider</h1>
+		
+		<span class="byline">By <span class="author vcard"><a class="url fn n" rel="nofollow" href="https://github.com/fabiorino">Fabio Rinaldi</a></span></span>
+	</header><!-- .entry-header -->
+
+	<span id="description"></span>
+	<span id="reviews"></span>
+	<span id="installation"></span>
+	<span id="developers"></span>
+	<span id="advanced" class=""></span>
+	<ul class="tabs clear">
+		<li id="tablink-description"><a href="https://wordpress.org/plugins/crelly-slider/#description">Details</a></li>
+		<li id="tablink-reviews"><a href="https://wordpress.org/plugins/crelly-slider/#reviews">Reviews</a></li>
+					<li id="tablink-installation">
+				<a href="https://wordpress.org/plugins/crelly-slider/#installation">Installation</a>
+			</li>
+				<li id="tablink-support">
+			<a href="https://wordpress.org/support/plugin/crelly-slider/">Support</a>
+		</li>
+		<li id="tablink-developers"><a href="https://wordpress.org/plugins/crelly-slider/#developers">Development</a></li>
+			</ul>
+	<script type="text/javascript">if ( '#changelog' == window.location.hash ) { window.setTimeout( function() { window.location.hash = '#developers'; }, 10 ); }</script>
+
+	<div class="entry-content">
+		
+<div id="tab-description" class="plugin-description section">
+	<h2 id="description-header">Description</h2>
+	<p>Crelly Slider is a Free / Open Source responsive WordPress slider that supports layers. You can add Texts, Images, YouTube/Vimeo videos using a powerful Drag &amp; Drop Builder and animate each of them. It is perfect to display your creative content in posts and pages.</p>
+<p><a href="http://crellyslider.altervista.org/" rel="nofollow ugc">Official WebSite (with live demo)</a><br>
+</p>
+<h4>User Friendly Admin Panel</h4>
+<p>Crelly Slider does not require any Coding Knowledge. With the simple admin panel you will be able to create the sliders in the easiest way. Upload images with the default WordPress interface or choose colors using the picker.</p>
+<h4>High Cross Browser Compatibility</h4>
+<p>Most of the animations and the transitions are written in jQuery (using the “animate” function). In this way we can assure the compatibility with modern (even Android and iOs) and older browsers.</p>
+<h4>Drag and Drop Builder</h4>
+<p>How can you position all the elements in to the slider area? You just simply drag them in to the desired position. Like in Powerpoint, you just have to move the object around the Slide.</p>
+<h4>Transitions &amp; Animations</h4>
+<p>Foreach element and slide you can choose an in animation and an out animation using a simple selection menu. You can set the transition speeds and how long the element will take to get in and out.</p>
+<h4>Completely Responsive</h4>
+<p>Responsive means that the Slider will be displayed correctly in every resolution that the user will use. If the display is small (like in a smartphone), the slides and the elements will be scaled to be adapted.</p>
+<h4>Full &amp; Fixed Width Modes</h4>
+<p>Using Crelly Slider you can select between a fixed or a full-width layout (both of them can be responsive). You are the designer, you own the WebSite, just choose the best for it.</p></div>
+
+<div id="screenshots" class="plugin-screenshots section"><div id="screenshots" class="plugin-screenshots"><h2>Screenshots</h2><section class="image-gallery"><div class="image-gallery-content"><span><button type="button" class="button-link image-gallery-left-nav"></button><button type="button" class="button-link image-gallery-right-nav"></button></span><div class="image-gallery-slides"><div class="image-gallery-slide center" style="transform: translate3d(0%, 0px, 0px); z-index: 3;"><figure class="image-gallery-image"><a href="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-1.jpg"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-1.jpg" alt=""></a><figcaption class="image-gallery-description">An example of a slide you can create</figcaption></figure></div><div class="image-gallery-slide right" style="transform: translate3d(100%, 0px, 0px); z-index: 1;"><figure class="image-gallery-image"><a href="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-2.png"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-2.png" alt=""></a><figcaption class="image-gallery-description">Unlimited sliders</figcaption></figure></div><div class="image-gallery-slide" style="transform: translate3d(200%, 0px, 0px); z-index: 1;"><figure class="image-gallery-image"><a href="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-3.png"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-3.png" alt=""></a><figcaption class="image-gallery-description">Slider settings</figcaption></figure></div><div class="image-gallery-slide left" style="transform: translate3d(-100%, 0px, 0px); z-index: 1;"><figure class="image-gallery-image"><a href="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-4.png"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-4.png" alt=""></a><figcaption class="image-gallery-description">Slides and elements options (in this case, a text element)</figcaption></figure></div></div></div><div class="image-gallery-thumbnails"><div class="image-gallery-thumbnails-container" style="transform: translate3d(0px, 0px, 0px);"><button type="button" class="button-link image-gallery-thumbnail active"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-1.jpg" alt="An example of a slide you can create"><div class="image-gallery-thumbnail-label"></div></button><button type="button" class="button-link image-gallery-thumbnail"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-2.png" alt="Unlimited sliders"><div class="image-gallery-thumbnail-label"></div></button><button type="button" class="button-link image-gallery-thumbnail"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-3.png" alt="Slider settings"><div class="image-gallery-thumbnail-label"></div></button><button type="button" class="button-link image-gallery-thumbnail"><img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/screenshot-4.png" alt="Slides and elements options (in this case, a text element)"><div class="image-gallery-thumbnail-label"></div></button></div></div></section></div></div>
+
+<div id="blocks" class="plugin-blocks section">
+	<h2 id="blocks-header">Blocks</h2>
+
+	<p>This plugin provides 1 block.</p>
+	<ul class="plugin-blocks-list">
+					<li class="plugin-blocks-list-item">
+									<span class="block-icon dashicons dashicons-block-default"></span>
+								<span class="block-title">Crelly Slider</span>
+							</li>
+			</ul>
+</div>
+
+<div id="tab-installation" class="plugin-installation section">
+	<h2 id="installation-header">Installation</h2>
+	<p>Download this plugin directly from your WordPress Admin Page.<br>
+<br>
+Click Install.<br>
+<br>
+Click Activate.<br>
+<br>
+You can find the documentation <a href="http://crellyslider.altervista.org/documentation/" rel="nofollow ugc">here</a>.</p></div>
+
+<div id="tab-reviews" class="plugin-reviews section">
+	<h2 id="reviews-header">Reviews</h2>
+	<div class="plugin-reviews">
+							<article class="plugin-review">
+					<div class="review-avatar">
+						<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/1714d1bcb0b43592ef9d5349ed347e95.jpeg" srcset="https://secure.gravatar.com/avatar/1714d1bcb0b43592ef9d5349ed347e95?s=120&amp;d=retro&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy" decoding="async">					</div><div class="review">
+						<header>
+							<div class="header-top">
+								<div class="wporg-ratings" aria-label="5 out of 5 stars" data-title-template="%s out of 5 stars" data-rating="5" style="color:#ffb900;"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>								<h3 class="review-title"><a class="url" href="https://wordpress.org/support/topic/a-solution-in-a-desert-of-commercial-bloatwares/">A solution in a desert of commercial bloatwares</a></h3>
+							</div>
+							<div class="header-bottom">
+								<span class="review-author author vcard"><a href="https://profiles.wordpress.org/patriziord/" title="Posts by PatrizioRD" rel="author">PatrizioRD</a></span>
+								<span class="review-date">June 17, 2021</span>
+							</div>
+						</header>
+						<div class="review-content">It does exactly what other plugins fail to do:
+animated sliders, with a clear back end and acceptable learning curve not overflowed by mostly unuseful functionalities and upsell tentatives.</div>
+					</div>
+				</article>
+							<article class="plugin-review">
+					<div class="review-avatar">
+						<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/f4c49ccf9a4bee3f76e67dbaf5f2f645.jpeg" srcset="https://secure.gravatar.com/avatar/f4c49ccf9a4bee3f76e67dbaf5f2f645?s=120&amp;d=retro&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy" decoding="async">					</div><div class="review">
+						<header>
+							<div class="header-top">
+								<div class="wporg-ratings" aria-label="5 out of 5 stars" data-title-template="%s out of 5 stars" data-rating="5" style="color:#ffb900;"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>								<h3 class="review-title"><a class="url" href="https://wordpress.org/support/topic/great-and-all-in-one-slider-plugin/">Great and all in one slider plugin!</a></h3>
+							</div>
+							<div class="header-bottom">
+								<span class="review-author author vcard"><a href="https://profiles.wordpress.org/apieiron/" title="Posts by apieiron" rel="author">apieiron</a></span>
+								<span class="review-date">March 11, 2021</span>
+							</div>
+						</header>
+						<div class="review-content">I try a lot of slider plugin, just this do everthing what i want. Thank you everbody who work on it!</div>
+					</div>
+				</article>
+							<article class="plugin-review">
+					<div class="review-avatar">
+						<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/889aaf6ec5822bbe603b4bf003b01e82.jpeg" srcset="https://secure.gravatar.com/avatar/889aaf6ec5822bbe603b4bf003b01e82?s=120&amp;d=retro&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy" decoding="async">					</div><div class="review">
+						<header>
+							<div class="header-top">
+								<div class="wporg-ratings" aria-label="4 out of 5 stars" data-title-template="%s out of 5 stars" data-rating="4" style="color:#ffb900;"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-empty"></span></div>								<h3 class="review-title"><a class="url" href="https://wordpress.org/support/topic/great-add-on-61/">Great add-on</a></h3>
+							</div>
+							<div class="header-bottom">
+								<span class="review-author author vcard"><a href="https://profiles.wordpress.org/ocolak/" title="Posts by Orhan Colak" rel="author">Orhan Colak</a></span>
+								<span class="review-date">August 15, 2020</span>
+							</div>
+						</header>
+						<div class="review-content">I can say better than many premium plugins. We couldn't fix a conflict issue with the theme I am using (Astra Pro) but I still keep using it and can recommend it.</div>
+					</div>
+				</article>
+							<article class="plugin-review">
+					<div class="review-avatar">
+						<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/882053238cba9008e9685e9f4f77e7e4.png" srcset="https://secure.gravatar.com/avatar/882053238cba9008e9685e9f4f77e7e4?s=120&amp;d=retro&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy" decoding="async">					</div><div class="review">
+						<header>
+							<div class="header-top">
+								<div class="wporg-ratings" aria-label="5 out of 5 stars" data-title-template="%s out of 5 stars" data-rating="5" style="color:#ffb900;"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>								<h3 class="review-title"><a class="url" href="https://wordpress.org/support/topic/lightweight-high-performance-slider/">Lightweight High Performance Slider</a></h3>
+							</div>
+							<div class="header-bottom">
+								<span class="review-author author vcard"><a href="https://profiles.wordpress.org/mozvilla/" title="Posts by mozvilla" rel="author">mozvilla</a></span>
+								<span class="review-date">May 21, 2020</span>
+							</div>
+						</header>
+						<div class="review-content">I used it for one of my customer website which result in giving premium quality lightweight layer slider. I request to keep it free or opensource. I have not faced any issue. Simple interface.</div>
+					</div>
+				</article>
+							<article class="plugin-review">
+					<div class="review-avatar">
+						<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/00ceda1c9a70016eec3a3d092edcfdfa" srcset="https://secure.gravatar.com/avatar/00ceda1c9a70016eec3a3d092edcfdfa?s=120&amp;d=retro&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy" decoding="async">					</div><div class="review">
+						<header>
+							<div class="header-top">
+								<div class="wporg-ratings" aria-label="5 out of 5 stars" data-title-template="%s out of 5 stars" data-rating="5" style="color:#ffb900;"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>								<h3 class="review-title"><a class="url" href="https://wordpress.org/support/topic/very-good-4533/">Very good!</a></h3>
+							</div>
+							<div class="header-bottom">
+								<span class="review-author author vcard"><a href="https://profiles.wordpress.org/htchr/" title="Posts by htchr" rel="author">htchr</a></span>
+								<span class="review-date">February 20, 2020</span>
+							</div>
+						</header>
+						<div class="review-content">Outstanding free slider. Many thanks and please continue to maintain.</div>
+					</div>
+				</article>
+							<article class="plugin-review">
+					<div class="review-avatar">
+						<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/7497f9f3457adcd1f7d0b3fb277b56fe.jpeg" srcset="https://secure.gravatar.com/avatar/7497f9f3457adcd1f7d0b3fb277b56fe?s=120&amp;d=retro&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy" decoding="async">					</div><div class="review">
+						<header>
+							<div class="header-top">
+								<div class="wporg-ratings" aria-label="5 out of 5 stars" data-title-template="%s out of 5 stars" data-rating="5" style="color:#ffb900;"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>								<h3 class="review-title"><a class="url" href="https://wordpress.org/support/topic/great-tool-1252/">Great Tool</a></h3>
+							</div>
+							<div class="header-bottom">
+								<span class="review-author author vcard"><a href="https://profiles.wordpress.org/fotisps/" title="Posts by Fotis Pastrakis" rel="author">Fotis Pastrakis</a></span>
+								<span class="review-date">January 14, 2020</span>
+							</div>
+						</header>
+						<div class="review-content">A great tool to create sliders with layers and get a very good result!</div>
+					</div>
+				</article>
+					</div>
+
+		<a class="reviews-link" href="https://wordpress.org/support/plugin/crelly-slider/reviews/">
+			Read all 109 reviews		</a></div>
+
+<div id="tab-developers" class="plugin-developers section">
+	<h2 id="developers-header">Contributors &amp; Developers</h2>
+	<div class="plugin-contributors"><p>“Crelly Slider” is open source software. The following people have contributed to this plugin.</p><span class="screen-reader-text">Contributors</span>
+		<ul id="contributors-list" class="contributors-list">
+						<li>
+				<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/16b4022cf5a8f47ad5a5a474301a4ab3.jpeg" srcset="https://secure.gravatar.com/avatar/16b4022cf5a8f47ad5a5a474301a4ab3?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32" loading="lazy" decoding="async">				<a href="https://profiles.wordpress.org/fabiorino/">
+					Fabio Rinaldi				</a>
+			</li>
+					</ul>
+
+		</div><div class="plugin-development"><p>“Crelly Slider” has been translated into 6 locales. Thank you to <a href="https://translate.wordpress.org/projects/wp-plugins/crelly-slider/contributors">the translators</a> for their contributions.</p><p><a href="https://translate.wordpress.org/projects/wp-plugins/crelly-slider">Translate “Crelly Slider” into your language.</a></p><h3>Interested in development?</h3><p><a href="https://plugins.trac.wordpress.org/browser/crelly-slider/">Browse the code</a>, check out the <a href="https://plugins.svn.wordpress.org/crelly-slider/">SVN repository</a>, or subscribe to the <a href="https://plugins.trac.wordpress.org/log/crelly-slider/">development log</a> by <a href="https://plugins.trac.wordpress.org/log/crelly-slider/?limit=100&amp;mode=stop_on_copy&amp;format=rss">RSS</a>.</p></div></div>
+
+<div id="tab-changelog" class="plugin-changelog section">
+	<h2 id="changelog-header">Changelog</h2>
+	<h4>1.4.5</h4>
+<ul>
+<li>Changed icon in admin sidebar to match WP 5.8 style.</li>
+</ul>
+<h4>1.4.4</h4>
+<ul>
+<li>Fixed JavaScript fatal error in WordPress 5.6.</li>
+<li>Removed deprecated JavaScript code.</li>
+</ul>
+<h4>1.4.3</h4>
+<ul>
+<li>Fixed compatibility issue with WordPress 5.5 due to the use of a deprecated jQuery function.</li>
+</ul>
+<h4>1.4.2</h4>
+<ul>
+<li>Push required version of WordPress to 4.6.</li>
+</ul>
+<h4>1.4.1</h4>
+<ul>
+<li>Fixed Gutenberg editor block failing to load.</li>
+</ul>
+<h4>1.4.0</h4>
+<ul>
+<li>Added support for Gutenberg: sliders can now be inserted in a page or a post via the WordPress visual editor, no need to use shortcodes anymore (but it will still be supported).</li>
+<li>Fixed slider option “Start from slide” displaying only “Random slide”, as reported <a href="https://wordpress.org/support/topic/start-slide-cannot-be-selected-if-random-start-slide-is-selected">here</a>.</li>
+<li>Fixed an issue where it was displayed an unsuccessful error message when saving slides with no elements, despite the operation being successful.</li>
+</ul>
+<h4>1.3.7</h4>
+<ul>
+<li>Fixed PHP warning “Array and string offset access syntax with curly braces is deprecated” as reported <a href="https://wordpress.org/support/topic/syntax-with-curly-braces-is-deprecated">here</a></li>
+</ul>
+<h4>1.3.6</h4>
+<ul>
+<li>Fixed PHP warning “Cannot modify header information – headers already sent” as reported <a href="https://wordpress.org/support/topic/incompatibility-with-athemes-sydney-pros-customizer">here</a></li>
+</ul>
+<h4>1.3.5</h4>
+<ul>
+<li>Security patch</li>
+<li>Improved import/export slider functions. They should now be compatible with web hosting services that block file_get_contents</li>
+<li>Minor changes and bux fixes</li>
+</ul>
+<h4>1.3.4</h4>
+<ul>
+<li>French translation moved to Polyglots. If you want to contribute to translate Crelly Slider in your language, check out <a href="https://translate.wordpress.org/projects/wp-plugins/crelly-slider" rel="nofollow ugc">this page</a></li>
+<li>Fixed error with old PHP versions</li>
+</ul>
+<h4>1.3.3</h4>
+<ul>
+<li>Fixed responsiveness on small devices</li>
+<li>Spanish, Serbian and Slovak translations moved to Polyglots. If you want to contribute to translate Crelly Slider in your language, check out <a href="https://translate.wordpress.org/projects/wp-plugins/crelly-slider" rel="nofollow ugc">this page</a></li>
+</ul>
+<h4>1.3.2</h4>
+<ul>
+<li>Fixed slide link not working</li>
+</ul>
+<h4>1.3.1</h4>
+<ul>
+<li>Fixed syntax error in old php versions</li>
+</ul>
+<h4>1.3.0</h4>
+<ul>
+<li>New feature: sliders can be scheduled (you can specify from when and how long they should be displayed for)</li>
+<li>When a video is manually paused by the user, it won’t resume automatically at the next slides loop</li>
+<li>For developers: TinyMCE settings are now hookable (credits to dlaxar https://github.com/fabiorino/crelly-slider/commits?author=dlaxar)</li>
+<li>For developers: sliders can be imported via code</li>
+<li>Other minor changes and bug fixes</li>
+</ul>
+<h4>1.2.3</h4>
+<ul>
+<li>Bug fix: align left/center/right buttons not working</li>
+</ul>
+<h4>1.2.2</h4>
+<ul>
+<li>Bug fix: fixed incompatibility with WordPress 4.8</li>
+</ul>
+<h4>1.2.1</h4>
+<ul>
+<li>Bug fix: if the user setting “Disable the visual editor when writing” was enabled, there were JavaScript errors</li>
+<li>Other minor changes and bug fixes</li>
+</ul>
+<h4>1.2.0</h4>
+<ul>
+<li>New feature: texts can be edited with the default WordPress editor (TinyMCE)</li>
+<li>New feature: the order of the slides can be set to “random”</li>
+<li>New feature: you can select the first slide that will be displayed</li>
+<li>New feature: slides can be marked as “draft”</li>
+<li>New feature: Crelly Slider is now compatible with WP Offload S3</li>
+<li>Improvement: the YouTube and the Vimeo APIs won’t be loaded unless there is a video in the slider</li>
+<li>Bug fix: when a text element was selected and then modified, the black box around it wasn’t correctly adapted to fit the new dimensions</li>
+<li>Bug fix: when a slide was cloned, it was impossible to change its background color and to move its elements, unless by refreshing the page</li>
+<li>Bug fix: improved compatibility for some web hosting providers that restricted the import/export functions</li>
+<li>Bug fix: when you added a really large image element, the element options were covered by the image</li>
+<li>Other minor changes and bug fixes</li>
+</ul>
+<h4>1.1.2</h4>
+<ul>
+<li>Bug fix: security issues</li>
+<li>Other minor changes and bug fixes</li>
+</ul>
+<h4>1.1.1</h4>
+<ul>
+<li>Bug fix: sometimes, the slider got stuck at loading screen</li>
+</ul>
+<h4>1.1.0</h4>
+<ul>
+<li>Awesome community: the slider is now translated in 8 different languages! Thank you!<br>English,<br>Italian,<br>Spanish (<a href="https://github.com/eduardoarandah" rel="nofollow ugc">Eduardo Aranda</a>),<br>Russian (<a href="http://dymskiy.ru/" rel="nofollow ugc">Andrey Dymskiy</a>),<br>Slovak (<a href="https://github.com/webmandesign" rel="nofollow ugc">Oliver Juhas</a>),<br>Serbian (Branislav Pakic),<br>French (sLy kereven),<br>German (Andreas Dolinar, <a href="http://elokron.de/" rel="nofollow ugc">Jan Adams</a>)</li>
+<li>New feature: Duplicate sliders and slides</li>
+<li>New feature: Import/Export sliders</li>
+<li>New feature: Support for YouTube and Vimeo videos</li>
+<li>New feature: The slides can be linked (the entire background is a link)</li>
+<li>New feature: New preloader: when loading, the background is no more grey. Now the first slide background image is automatically blurred and used as background for the preloader. When the slider is loaded, the blurred background will fade away and the first slide will be displayed</li>
+<li>New feature: Navigation and controls are much better looking now</li>
+<li>New feature: Added public methods to control the slider. pause(), resume(), nextSlide(), previousSlide(), changeSlide(slide_index), getCurrentSlide(), getTotalSlides()</li>
+<li>New feature: Slides background color can now be set manually</li>
+<li>New feature: Custom CSS classes can now be added to elements</li>
+<li>New feature: Added “Center vertically” and “Center horizontally” buttons to align elements</li>
+<li>New feature: The slides background image can now be quickly set as “responsive full width image” or “pattern”</li>
+<li>Bug fix: Sometimes slides and elements weren’t saved correctly</li>
+<li>Bug fix: Text elements were displayed on two lines when an inline tag was added</li>
+<li>Bug fix: When automatic slide was set to “no”, the out animations were still performed</li>
+<li>Bug fix: When the backend interface was loading there were some graphical glitches</li>
+<li>Bug fix: Background position wasn’t correct on Firefox</li>
+<li>Minor change: Texts have now a default line height, color and font. In this way, I can be sure that they are displayed exactly in the same way in the backend and in the frontend</li>
+<li>Minor change: dropped support for IE &lt; 11</li>
+<li>Other minor changes and bug fixes</li>
+</ul>
+<h4>0.8.2</h4>
+<ul>
+<li>Fixed: broken admin layout on Firefox (<a href="https://github.com/fabiorino/crelly-slider/pull/5" rel="nofollow ugc">Thanks eduardoarandah</a>)</li>
+<li>Crelly Slider is now translated in Spanish (<a href="https://github.com/eduardoarandah/crelly-slider/commit/3b7d49b63d9dbe60c420669edea898de34cd720f" rel="nofollow ugc">Again, thanks eduardoarandah</a>) and in Italian!</li>
+<li>Do you want to translate the plugin in your language? <a href="http://fabiorino1.altervista.org/projects/crellyslider/documentation/#translate" rel="nofollow ugc">Check the documentation</a></li>
+</ul>
+<h4>0.8.1</h4>
+<ul>
+<li>Fixed: padding broken in IE8</li>
+<li>Fixed: background images with a long name weren’t stored correctly into the database</li>
+</ul>
+<h4>0.8.0</h4>
+<ul>
+<li>Changed: by default, elements out animations start before the slide out animation. In this way, they result more visible, therefore better than before. The option is customizable for each element</li>
+<li>Added: support for touch, swipe and drag</li>
+<li>Improved progress bar animation: now has a cool swing effect</li>
+<li>The current editing slide tab is now highlighted</li>
+<li>Fixed: before preloader, for about a second, the slider was displayed as an unordered list</li>
+<li>Fixed: now if you specify the opacity in custom CSS, that value won’t be overwritten</li>
+<li>Changed: by default, line-height is now 1.5. Please, if you want to change it, specify a pure number to avoid compatibility issues</li>
+<li>Fixed: blue border around linked images in IE</li>
+<li>The text / HTML of a text element is now wrapped in a textarea (no more in an input)</li>
+<li>Fixed: apostrophes in text elements are now displayed correctly</li>
+<li>Removed useless file from the package.</li>
+<li>Removed afterSlideEnd(), afterSetResponsive(), afterPause(). They were useless</li>
+<li>Other minor bug fixes and changes</li>
+</ul>
+<h4>0.7.0</h4>
+<ul>
+<li>Fixed “Error saving elements” if there are no elements</li>
+</ul>
+<h4>0.6.9</h4>
+<ul>
+<li>Added the possibility to insert links in images and texts</li>
+<li>Added slider preloader (with a gif image)</li>
+<li>Added icon in the style of WordPress to the lateral sidebar in the admin panel</li>
+<li>Added confirm alert when you delete a slider</li>
+<li>Fixed: now HTML codes inserted in text elements are working properly</li>
+<li>Fixed: when you selected an element into the editing area weren’t shown the correct element options</li>
+<li>Fixed invisible progress bar in Internet Explorer 8</li>
+<li>Fixed invisible slider navigation in Internet Explorer 8</li>
+<li>Changed: text output is now wrapped by a “div” and not a “p” for a better compatibility and a cleaner code</li>
+<li>Changed name to the “add image” button in the element options</li>
+<li>Other minor bug fixes and changes</li>
+</ul>
+<h4>0.6.8</h4>
+<ul>
+<li>Added callback functions: beforeStart, beforeSetResponsive, afterSetResponsive, beforeSlideStart, afterSlideEnd, beforePause, afterPause, beforeResume</li>
+<li>Fixed responsive methods that restarted the slide in particular moments uselessly</li>
+</ul>
+<h4>0.6.7</h4>
+<ul>
+<li>Fixed “Add image” not working on Firefox and Internet Explorer</li>
+<li>Fixed “Duplicate element” on animations</li>
+</ul>
+<h4>0.6.6</h4>
+<ul>
+<li>Fixed directory error</li>
+</ul>
+<h4>0.6.5</h4>
+<ul>
+<li>Initial release</li>
+</ul></div>
+	</div><!-- .entry-content -->
+
+	<div class="entry-meta">
+		<div class="widget plugin-meta">
+		<h2 class="screen-reader-text">Meta</h2>
+
+		<ul>
+			
+			<li>
+				Version: <strong>1.4.5</strong>			</li>
+
+			<li>
+				Last updated: <strong><span>10 months</span> ago</strong>			</li>
+			<li>
+				Active installations: <strong>20,000+</strong>			</li>
+
+							<li>
+					WordPress Version:					<strong>
+						4.6 or higher					</strong>
+				</li>
+			
+							<li>
+					Tested up to: <strong>5.8.4</strong>				</li>
+			
+			
+							<li>
+					Languages:<div class="languages">						<button type="button" class="button-link popover-trigger" aria-expanded="false" data-target="popover-languages">
+							See all 7						</button>
+						<div id="popover-languages" class="popover is-top-right">
+							<div class="popover-arrow"></div>
+
+							<button type="button" class="button-link popover-close" aria-label="Close this popover">
+								Close							</button>
+
+							<div class="popover-inner">
+								<p><a href="https://wordpress.org/plugins/crelly-slider/">English (US)</a>, <a href="https://fr.wordpress.org/plugins/crelly-slider/">French (France)</a>, <a href="https://de.wordpress.org/plugins/crelly-slider/">German</a>, <a href="https://it.wordpress.org/plugins/crelly-slider/">Italian</a>, <a href="https://ru.wordpress.org/plugins/crelly-slider/">Russian</a>, <a href="https://sr.wordpress.org/plugins/crelly-slider/">Serbian</a>, and <a href="https://es.wordpress.org/plugins/crelly-slider/">Spanish (Spain)</a>.</p>
+								<p>
+								<a href="https://translate.wordpress.org/projects/wp-plugins/crelly-slider">Translate into your language</a>								</p>
+							</div>
+						</div>
+						</div>				</li>
+				
+			<li class="clear">Tags: <div class="tags"><a href="https://wordpress.org/plugins/tags/animations/" rel="tag">animations</a><a href="https://wordpress.org/plugins/tags/layers/" rel="tag">layers</a><a href="https://wordpress.org/plugins/tags/slider/" rel="tag">slider</a><a href="https://wordpress.org/plugins/tags/texts/" rel="tag">texts</a><a href="https://wordpress.org/plugins/tags/transitions/" rel="tag">transitions</a></div></li>
+							<li class="hide-if-no-js">
+					<strong><a class="plugin-admin" href="https://wordpress.org/plugins/crelly-slider/advanced/">Advanced View</a></strong>				</li>
+					</ul>
+
+		</div><div class="widget plugin-ratings"><h2 class="widget-title">Ratings</h2>			<a class="reviews-link" href="https://wordpress.org/support/plugin/crelly-slider/reviews/">See all</a>
+
+			<div class="rating">
+				<div class="wporg-ratings" aria-label="5 out of 5 stars" data-title-template="%s out of 5 stars" data-rating="5" style="color:#ffb900;"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>			</div>
+
+			<ul class="ratings-list">
+									<li class="counter-container">
+						<a href="https://wordpress.org/support/plugin/crelly-slider/reviews/?filter=5">
+							<span class="counter-label">5 stars</span>
+					<span class="counter-back">
+						<span class="counter-bar" style="width: 95.412844036697%;"></span>
+					</span>
+							<span class="counter-count">104</span>
+						</a>
+					</li>
+									<li class="counter-container">
+						<a href="https://wordpress.org/support/plugin/crelly-slider/reviews/?filter=4">
+							<span class="counter-label">4 stars</span>
+					<span class="counter-back">
+						<span class="counter-bar" style="width: 3.6697247706422%;"></span>
+					</span>
+							<span class="counter-count">4</span>
+						</a>
+					</li>
+									<li class="counter-container">
+						<a href="https://wordpress.org/support/plugin/crelly-slider/reviews/?filter=3">
+							<span class="counter-label">3 stars</span>
+					<span class="counter-back">
+						<span class="counter-bar" style="width: 0%;"></span>
+					</span>
+							<span class="counter-count">0</span>
+						</a>
+					</li>
+									<li class="counter-container">
+						<a href="https://wordpress.org/support/plugin/crelly-slider/reviews/?filter=2">
+							<span class="counter-label">2 stars</span>
+					<span class="counter-back">
+						<span class="counter-bar" style="width: 0.91743119266055%;"></span>
+					</span>
+							<span class="counter-count">1</span>
+						</a>
+					</li>
+									<li class="counter-container">
+						<a href="https://wordpress.org/support/plugin/crelly-slider/reviews/?filter=1">
+							<span class="counter-label">1 star</span>
+					<span class="counter-back">
+						<span class="counter-bar" style="width: 0%;"></span>
+					</span>
+							<span class="counter-count">0</span>
+						</a>
+					</li>
+							</ul>
+
+		
+					<div class="user-rating">
+				<a href="https://login.wordpress.org/?redirect_to=https%3A%2F%2Fwordpress.org%2Fsupport%2Fplugin%2Fcrelly-slider%2Freviews%2F%23new-post&amp;locale=en_US" rel="nofollow" title="Log in to WordPress.org">Log in to submit a review.</a>
+			</div>
+		</div><div id="plugin-contributors" class="widget plugin-contributors"><h2 class="widget-title">Contributors</h2>
+		<ul id="contributors-list" class="contributors-list">
+						<li>
+				<img alt="" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/16b4022cf5a8f47ad5a5a474301a4ab3.jpeg" srcset="https://secure.gravatar.com/avatar/16b4022cf5a8f47ad5a5a474301a4ab3?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32" loading="lazy" decoding="async">				<a href="https://profiles.wordpress.org/fabiorino/">
+					Fabio Rinaldi				</a>
+			</li>
+					</ul>
+
+		</div><div class="widget plugin-support"><h2 class="widget-title">Support</h2>			<p class="aside">Issues resolved in last two months:</p>
+			<p class="counter-container">
+				<span class="counter-back">
+					<span class="counter-bar" style="width: 0%;"></span>
+				</span>
+				<span class="counter-count">
+					0 out of 1				</span>
+			</p>
+
+		
+		<p>
+			<a class="button" href="https://wordpress.org/support/plugin/crelly-slider/">View support forum</a>
+		</p>
+
+		</div><div class="widget plugin-donate"><h2 class="widget-title">Donate</h2>
+			<p class="aside">Would you like to support the advancement of this plugin?</p>
+			<p>
+				<a class="button button-secondary" href="http://crellyslider.altervista.org/contribute-and-support/" rel="nofollow ugc">
+					Donate to this plugin				</a>
+			</p>
+
+			</div>	</div><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+	</main><!-- #main -->
+
+
+	</div><!-- #content -->
+</div><!-- #page -->
+
+
+<footer class="wp-container-23 wp-block-group global-footer alignfull">
+	
+	<div class="wp-container-19 wp-block-group global-footer__navigation-container">
+		<nav class="wp-container-10 global-footer__navigation-important wp-block-navigation" aria-label=""><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/about/"><span class="wp-block-navigation-item__label">About</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/news/"><span class="wp-block-navigation-item__label">News</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/hosting/"><span class="wp-block-navigation-item__label">Hosting</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpressfoundation.org/donate/"><span class="wp-block-navigation-item__label">Donate</span></a></li></ul></nav>
+
+		<nav class="wp-container-12 global-footer__navigation-information wp-block-navigation" aria-label=""><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/"><span class="wp-block-navigation-item__label">Support</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://developer.wordpress.org/"><span class="wp-block-navigation-item__label">Developers</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://make.wordpress.org/"><span class="wp-block-navigation-item__label">Get Involved</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://learn.wordpress.org/"><span class="wp-block-navigation-item__label">Learn</span></a></li></ul></nav>
+
+		<nav class="wp-container-14 global-footer__navigation-resources wp-block-navigation" aria-label=""><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/showcase/"><span class="wp-block-navigation-item__label">Showcase</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/plugins/"><span class="wp-block-navigation-item__label">Plugins</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/themes/"><span class="wp-block-navigation-item__label">Themes</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/patterns/"><span class="wp-block-navigation-item__label">Patterns</span></a></li></ul></nav>
+
+		<nav class="wp-container-16 global-footer__navigation-community wp-block-navigation" aria-label=""><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://central.wordcamp.org/"><span class="wp-block-navigation-item__label">WordCamp</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.tv/"><span class="wp-block-navigation-item__label">WordPress.TV</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://buddypress.org/"><span class="wp-block-navigation-item__label">BuddyPress</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://bbpress.org/"><span class="wp-block-navigation-item__label">bbPress</span></a></li></ul></nav>
+
+		<nav class="wp-container-18 global-footer__navigation-external wp-block-navigation" aria-label=""><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.com/?ref=wporg-footer"><span class="wp-block-navigation-item__label">WordPress.com</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://ma.tt/"><span class="wp-block-navigation-item__label">Matt</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/about/privacy/"><span class="wp-block-navigation-item__label">Privacy</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://publiccode.eu/"><span class="wp-block-navigation-item__label">Public Code</span></a></li></ul></nav>
+	</div> 
+
+	
+	<div class="wp-container-22 wp-block-group global-footer__logos-container">
+		
+		<div class="wp-container-20 is-content-justification-left wp-block-group">
+			
+			<!-- The design calls for two logos, a small "mark" on mobile/tablet, and the full logo for desktops. -->
+				<figure class="wp-block-image global-footer__wporg-logo-mark">
+					<a href="https://wordpress.org/">
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" width="28" height="28" viewBox="0 0 28 28">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M13.6052 0.923525C16.1432 0.923525 18.6137 1.67953 20.7062 3.09703C22.7447 4.47403 24.3512 6.41803 25.3097 8.68603C26.9837 12.6415 26.5382 17.164 24.1352 20.7145C22.7582 22.753 20.8142 24.3595 18.5462 25.318C14.5907 26.992 10.0682 26.5465 6.51772 24.1435C4.47922 22.7665 2.87272 20.8225 1.91422 18.5545C0.240225 14.599 0.685725 10.0765 3.08872 6.52603C4.46572 4.48753 6.40973 2.88103 8.67772 1.92253C10.2302 1.26103 11.9177 0.923525 13.6052 0.923525ZM13.6052 0.113525C6.15322 0.113525 0.105225 6.16153 0.105225 13.6135C0.105225 21.0655 6.15322 27.1135 13.6052 27.1135C21.0572 27.1135 27.1052 21.0655 27.1052 13.6135C27.1052 6.16153 21.0572 0.113525 13.6052 0.113525Z"></path>
+	<path fill="currentColor" d="M2.36011 13.6133C2.36011 17.9198 4.81711 21.8618 8.70511 23.7383L3.33211 9.03684C2.68411 10.4813 2.36011 12.0338 2.36011 13.6133ZM21.2061 13.0463C21.2061 11.6558 20.7066 10.6973 20.2746 9.94134C19.8426 9.18534 19.1676 8.22684 19.1676 7.30884C19.1676 6.39084 19.9506 5.31084 21.0576 5.31084H21.2061C16.6296 1.11234 9.51511 1.42284 5.31661 6.01284C4.91161 6.45834 4.53361 6.93084 4.20961 7.43034H4.93861C6.11311 7.43034 7.93561 7.28184 7.93561 7.28184C8.54311 7.24134 8.61061 8.13234 8.00311 8.21334C8.00311 8.21334 7.39561 8.28084 6.72061 8.32134L10.8111 20.5118L13.2681 13.1273L11.5131 8.32134C10.9056 8.28084 10.3386 8.21334 10.3386 8.21334C9.73111 8.17284 9.79861 7.25484 10.4061 7.28184C10.4061 7.28184 12.2691 7.43034 13.3626 7.43034C14.4561 7.43034 16.3596 7.28184 16.3596 7.28184C16.9671 7.24134 17.0346 8.13234 16.4271 8.21334C16.4271 8.21334 15.8196 8.28084 15.1446 8.32134L19.2081 20.4173L20.3691 16.7453C20.8821 15.1388 21.1926 14.0048 21.1926 13.0328L21.2061 13.0463ZM13.7946 14.5853L10.4196 24.3998C12.6876 25.0613 15.1041 25.0073 17.3316 24.2243L17.2506 24.0758L13.7946 14.5853ZM23.4741 8.21334C23.5281 8.59134 23.5551 8.98284 23.5551 9.37434C23.5551 10.5218 23.3391 11.8043 22.7046 13.3973L19.2621 23.3333C24.5271 20.2688 26.4036 13.5593 23.4741 8.21334Z"></path>
+</svg>					</a>
+				</figure>
+
+				<figure class="wp-block-image global-footer__wporg-logo-full">
+					<a href="https://wordpress.org/">
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" width="329" height="52" viewBox="0 0 329 52">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M4.33 26a21.68 21.68 0 0 0 12.22 19.5L6.21 17.18A21.66 21.66 0 0 0 4.33 26ZM26.38 27.89l-6.5 18.89a21.31 21.31 0 0 0 6.12.89 21.77 21.77 0 0 0 7.2-1.23 1.429 1.429 0 0 1-.16-.3l-6.66-18.25Z"></path>
+	<path fill="currentColor" d="M26 0a26 26 0 1 0 0 52 26 26 0 0 0 0-52Zm20.27 39.66a24.47 24.47 0 0 1-29.78 8.86 24.49 24.49 0 0 1-13-13 24.4 24.4 0 0 1 5.23-26.8 24.46 24.46 0 0 1 26.79-5.24 24.49 24.49 0 0 1 13 13 24.42 24.42 0 0 1-2.25 23.17l.01.01Z"></path>
+	<path fill="currentColor" d="M45 15.61c.103.736.153 1.477.15 2.22a20.38 20.38 0 0 1-1.65 7.76l-6.61 19.14A21.65 21.65 0 0 0 45 15.61ZM40.63 24.91a11.45 11.45 0 0 0-1.79-6c-1.1-1.78-2.13-3.29-2.13-5.08A3.76 3.76 0 0 1 40.35 10h.28A21.65 21.65 0 0 0 7.9 14.1h1.39c2.27 0 5.78-.27 5.78-.27a.9.9 0 0 1 .13 1.79s-1.17.13-2.47.2l7.88 23.47 4.75-14.22L22 15.84c-1.17-.07-2.27-.2-2.27-.2a.9.9 0 0 1 .14-1.79s3.57.27 5.7.27c2.13 0 5.78-.27 5.78-.27a.9.9 0 0 1 .14 1.79s-1.18.13-2.48.2l7.83 23.29 2.23-7.08a25.171 25.171 0 0 0 1.56-7.14ZM145.83 19.3h-10.34v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85-2.48-.35-4.16-1.68-6.47-4.22l-2.66-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.24 0 3.76.69 3.76 4.79v7.4c0 4.1-.52 4.85-3.76 4.85v1.1h11.5v-1.1c-3.24 0-3.76-.75-3.76-4.85v-2.08h1l6.42 8h16.81c8.26 0 11.85-4.39 11.85-9.65 0-5.26-3.61-9.56-11.87-9.56Zm-24.21 9.42V21H124a3.551 3.551 0 0 1 3.76 3.87 3.536 3.536 0 0 1-3.76 3.85h-2.38Zm24.38 8h-.4c-2.08 0-2.37-.52-2.37-3.18V21H146c6 0 7.11 4.39 7.11 7.8S152 36.75 146 36.75v-.03ZM93.49 13.52H82.62v1.16c3.7 0 4.22 1 3.07 4.39l-4 11.78L76 13.52h-1.1l-5.85 17.33-3.87-11.78c-1.22-3.59-.29-4.39 3.12-4.39v-1.16H55.47v1.16c3.35 0 4.28.86 5.66 5.08l6.42 19.76h.75l6-18.08 5.9 18.08h.8l6.59-19.76c1.44-4.22 2.31-5.08 5.95-5.08l-.05-1.16ZM101.34 18.55c-6.35 0-11.55 4.68-11.55 10.34s5.2 10.4 11.55 10.4c6.35 0 11.56-4.68 11.56-10.4 0-5.72-5.2-10.34-11.56-10.34Zm0 18.89c-5.31 0-7.16-4.74-7.16-8.55 0-3.81 1.85-8.55 7.16-8.55 5.31 0 7.23 4.79 7.23 8.55 0 3.76-1.85 8.55-7.23 8.55ZM170.67 13.52h-12v1.16c3.88 0 4.57.92 4.57 6.7v9.24c0 5.78-.69 6.76-4.57 6.76v1.16H172v-1.16c-3.88 0-4.57-1-4.57-6.76v-2.83h3.29c6 0 9.25-3.12 9.25-7.11s-3.35-7.16-9.3-7.16Zm0 12.13h-3.29v-10h3.29c3.24 0 4.74 2.31 4.74 5.08s-1.5 4.92-4.74 4.92ZM219.32 34.15c-.52 1.9-1.15 2.6-5.26 2.6h-.81c-3 0-3.52-.7-3.52-4.8v-2.66c4.51 0 4.85.41 4.85 3.41h1.1v-8.61h-1.1c0 3-.34 3.41-4.85 3.41V21h3.18c4.1 0 4.74.69 5.26 2.6l.28 1.1h.93l-.38-5.4h-17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 3.75-.44 4.69-3 4.83-2.42-.37-4.09-1.69-6.37-4.2l-2.65-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85v1.1h11.49v-1.1c-3.23 0-3.75-.75-3.75-4.85v-2.08h1l6.41 8h23.75l.35-5.43h-.87l-.31 1.07ZM189 28.72V21h2.37a3.542 3.542 0 0 1 3.75 3.87 3.532 3.532 0 0 1-.998 2.77 3.532 3.532 0 0 1-2.752 1.05l-2.37.03ZM234.52 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85h-1.09a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7-2.54 7-6.18.07-1.77-1.03-3.9-3.8-5.23ZM252 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85H253a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7.05-2.54 7.05-6.18.07-1.77-1.03-3.9-3.79-5.23ZM277.56 18.75a10.481 10.481 0 0 0-10.68 10.17 10.47 10.47 0 0 0 10.68 10.16c5.9 0 10.71-4.58 10.71-10.16s-4.81-10.17-10.71-10.17Zm0 19c-5.52 0-7.63-4.91-7.63-8.88 0-3.97 2.07-8.87 7.63-8.87 5.56 0 7.66 4.94 7.66 8.92 0 3.98-2.11 8.88-7.66 8.88v-.05ZM301.71 33.79l-3.14-3.69c3.63-.38 5.71-2.59 5.71-5.38 0-3-2.44-5.42-6.89-5.42h-8.47v.7c2.66 0 3.05.51 3.05 3.72v10.39c0 3.21-.39 3.76-3.05 3.76v.67h8.66v-.67c-2.66 0-3.05-.55-3.05-3.76v-4H296l6.35 8.44h5.29v-.67c-1.88-.24-4.03-1.88-5.93-4.09ZM294.53 29v-8.52h2.82c2.79 0 4.08 1.93 4.08 4.24 0 2.31-1.29 4.28-4.08 4.28h-2.82ZM319.6 30.59v.64c2.21 0 3 .7 3 2.08 0 2.89-2.5 4.39-5.29 4.39-5.93 0-7.6-4.81-7.6-8.78 0-3.97 1.86-8.92 7-8.92 3.59 0 6.09 2.54 7 6.7h.64v-7h-.64a3.281 3.281 0 0 1-1.09 1.83 8.203 8.203 0 0 0-6-2.73 10.167 10.167 0 0 0-9.851 10.165 10.169 10.169 0 0 0 9.851 10.165c3.34 0 4.78-1.66 8.34-1.66V35c0-3.21.39-3.75 3.05-3.75v-.64l-8.41-.02ZM261.9 34.77a2.061 2.061 0 1 0 .288 4.112 2.061 2.061 0 0 0-.288-4.112Z"></path>
+</svg>					</a>
+				</figure>
+			
+
+					</div>
+		
+
+		
+		<ul class="wp-container-21 wp-block-social-links is-style-logos-only">
+			<li class="wp-social-link wp-social-link-facebook wp-block-social-link"><a href="https://www.facebook.com/WordPress/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Visit our Facebook page</span></a></li>
+			<li class="wp-social-link wp-social-link-twitter wp-block-social-link"><a href="https://twitter.com/WordPress" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Visit our Twitter account</span></a></li>
+		</ul> 
+
+					<!-- Use an image so it can have the MrsEaves font. -->
+			
+			<figure class="wp-block-image is-resized global-footer__code_is_poetry">
+				<img src="./Crelly Slider – WordPress plugin _ WordPress.org_files/code-is-poetry-for-dark-bg.svg" alt="Code is Poetry" width="188" height="13">
+			</figure> 
+
+			</div> 
+</footer> 
+<style>.wp-container-2 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-2 > * { margin: 0; }</style>
+<style>.wp-container-6 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-6 > * { margin: 0; }</style>
+<style>.wp-container-7 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-7 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-7 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-8 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-8 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-8 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-10 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-10 > * { margin: 0; }</style>
+<style>.wp-container-12 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-12 > * { margin: 0; }</style>
+<style>.wp-container-14 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-14 > * { margin: 0; }</style>
+<style>.wp-container-16 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-16 > * { margin: 0; }</style>
+<style>.wp-container-18 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-18 > * { margin: 0; }</style>
+<style>.wp-container-19 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-19 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-19 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-20 {display: flex;gap: 0.5em;flex-wrap: wrap;justify-content: flex-start;align-items: center;}.wp-container-20 > * { margin: 0; }</style>
+<style>.wp-container-21 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-21 > * { margin: 0; }</style>
+<style>.wp-container-22 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-22 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-22 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-23 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-23 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-23 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/hoverintent-js.min.js.download" id="hoverintent-js-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/admin-bar.min.js.download" id="admin-bar-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/navigation.js.download" id="wporg-navigation-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/skip-link-focus-fix.js.download" id="wporg-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/popover.js.download" id="wporg-plugins-popover-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/section-faq.js.download" id="wporg-plugins-faq-js"></script>
+<script type="text/javascript" id="wporg-plugins-locale-banner-js-extra">
+/* <![CDATA[ */
+var wporgLocaleBanner = {"apiURL":"https:\/\/wordpress.org\/plugins\/wp-json\/plugins\/v1\/locale-banner","currentPlugin":"crelly-slider"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/locale-banner.js.download" id="wporg-plugins-locale-banner-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/lodash.min.js.download" id="lodash-js"></script>
+<script type="text/javascript" id="lodash-js-after">
+window.lodash = _.noConflict();
+</script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/index.min.js(2).download" id="wp-escape-html-js"></script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/index.min.js(3).download" id="wp-element-js"></script>
+<script type="text/javascript" id="wporg-plugins-client-js-extra">
+/* <![CDATA[ */
+var localeData = {"":{"Plural-Forms":"nplurals=2; plural=n != 1;","Language":"en","localeSlug":"en"},"screenshots":"Screenshots"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/theme.js.download" id="wporg-plugins-client-js"></script>
+<script type="text/javascript" id="wporg-global-header-script-js-extra">
+/* <![CDATA[ */
+var wporgGlobalHeaderI18n = {"openSearchLabel":"Open Search","closeSearchLabel":"Close Search","overflowMenuLabel":"More menu"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Crelly Slider – WordPress plugin _ WordPress.org_files/wporg-global-header-script.js.download" id="wporg-global-header-script-js"></script>
+
+	
+
+</body></html>
